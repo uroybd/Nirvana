@@ -154,6 +154,9 @@ section.share {
   padding-top: 1em;
   text-align: right;
 }
+section.share i {
+  color: #202020;
+}
 section.author h4,
 section.author p,
 section.share p {
@@ -192,9 +195,6 @@ blockquote {
   font-size: 1em;
   font-weight: 300;
   line-height: 1.2em;
-  font-style: italic;
-  text-transform: uppercase;
-  border-left: 0.5em solid rgba(0, 0, 0, 0.05);
   margin-left: 1em;
   padding-left: 1em;
 }
@@ -204,7 +204,12 @@ blockquote p {
   font-weight: 300;
   line-height: 1.2em;
   font-style: italic;
-  text-transform: uppercase;
+}
+blockquote p::before {
+  content: " ";
+  font-family: 'FontAwesome';
+  font-size: 1.5em;
+  vertical-align: text-top;
 }
 .post-meta {
   color: #95a5a6;
