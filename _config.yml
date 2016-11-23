@@ -13,20 +13,19 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: A nice title
-subtitle: "And a subtitle"
-email: someusername@someprovider.com
-description: "A nice description"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://example.com" # the base hostname & protocol for your site
+title: Your Awesome title
+subtitle: "And subtitle"
+email: username@domain.com
+description: "A nice description."
+url: "https://someurl.com" # the base hostname & protocol for your site
 gems: [jekyll-paginate]
 paginate: 5
 paginate_path: "/page:num/"
 logo: "/images/weblogo.jpg"
 
-#disqus: "Your disqus id"
-#facebook: "Your Facebook Username"
-#fb_app_id "Your Facebook App ID"
+#disqus: disqus_username
+#for github pages:
+github_username: username
 
 excerpt_separator: <!--more-->
 
@@ -42,10 +41,28 @@ kramdown:
   enable_coderay:   false
 
 author:
-  name: "Your Name"
-  image: /images/weblogo.png
-  bio: "A nice Bio"
-  website: "Your website Link"
-    
-theme: minima
+  name: Author Name
+  image: Author Image
+  bio: A Bio
+  website: Website link
+
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
+sass:
+ style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
+
+#social
+fb_app_id: your app id
+fb_username: facebook username
+first_name: John
+last_name: Doe
+gender: male or female
